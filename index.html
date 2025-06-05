@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kunjan Bhattarai - Portfolio</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Open Sans', sans-serif;
+    }
+
+    body {
+      background: linear-gradient(135deg, #f4f4f4, #e0e7ff);
+      color: #333;
+      line-height: 1.6;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    .header {
+      text-align: center;
+      background: linear-gradient(135deg, #007bff, #0056b3);
+      color: white;
+      padding: 3rem 1rem;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+      margin-bottom: 20px;
+      animation: fadeIn 1s ease-in;
+    }
+
+    .header h1 {
+      font-size: 2.5rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .header p {
+      font-size: 1.2rem;
+      opacity: 0.9;
+    }
+
+    .nav {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      background: #fff;
+      padding: 15px;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      margin-bottom: 20px;
+      animation: slideIn 0.5s ease-in;
+    }
+
+    .nav a {
+      text-decoration: none;
+      color: #007bff;
+      font-weight: bold;
+      font-size: 1.1rem;
+      transition: color 0.3s;
+    }
+
+    .nav a:hover {
+      color: #0056b3;
+    }
+
+    .section {
+      background: #fff;
+      padding: 2rem;
+      margin: 20px 0;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      animation: fadeInUp 0.8s ease-in;
+    }
+
+    .section h2 {
+      color: #007bff;
+      margin-bottom: 1rem;
+      font-size: 1.8rem;
+      border-bottom: 2px solid #007bff;
+      padding-bottom: 0.5rem;
+    }
+
+    .section p, .section ul {
+      font-size: 1.1rem;
+    }
+
+    .section ul {
+      list-style: none;
+    }
+
+    .section ul li {
+      margin: 10px 0;
+    }
+
+    .section a {
+      color: #007bff;
+      text-decoration: none;
+      transition: color 0.3s;
+    }
+
+    .section a:hover {
+      color: #0056b3;
+      text-decoration: underline;
+    }
+
+    .counter-section {
+      text-align: center;
+      padding: 1rem;
+    }
+
+    .counter-section p {
+      font-size: 1.5rem;
+      margin: 10px 0;
+    }
+
+    .counter-section button {
+      padding: 10px 20px;
+      margin: 0 10px;
+      background: linear-gradient(135deg, #007bff, #0056b3);
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 1rem;
+      transition: transform 0.2s, background 0.3s;
+    }
+
+    .counter-section button:hover {
+      background: linear-gradient(135deg, #0056b3, #003d80);
+      transform: scale(1.05);
+    }
+
+    .footer {
+      text-align: center;
+      background: linear-gradient(135deg, #007bff, #0056b3);
+      color: white;
+      padding: 1rem;
+      border-radius: 8px;
+      margin-top: 20px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes slideIn {
+      from { transform: translateY(-20px); opacity: 0; }
+      to { transform: translateY(0); opacity: 1; }
+    }
+
+    @media (max-width: 768px) {
+      .nav {
+        flex-direction: column;
+        gap: 10px;
+      }
+
+      .header h1 {
+        font-size: 1.8rem;
+      }
+
+      .section h2 {
+        font-size: 1.5rem;
+      }
+
+      .section p, .section ul {
+        font-size: 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <!-- Header -->
+    <header class="header">
+      <h1>Kunjan Bhattarai</h1>
+      <p>Educator, Writer, and Tech Enthusiast</p>
+    </header>
+
+    <!-- Navigation -->
+    <nav class="nav">
+      <a href="#about">About</a>
+      <a href="#experience">Experience</a>
+      <a href="#projects">Projects</a>
+      <a href="#blog">Blog</a>
+      <a href="#social-work">Social Work</a>
+      <a href="#interests">Interests</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+      <h2>About Me</h2>
+      <p>
+        I am Kunjan Bhattarai, a BBS 1st-year student who completed high school in 2024. I am passionate about education, writing, and technology, with a keen interest in finance and the Nepal Stock Exchange (NEPSE). I actively contribute to social causes and enjoy creating interactive web projects.
+      </p>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="section">
+      <h2>Experience</h2>
+      <ul>
+        <li><strong>Orbit Institute (1 year)</strong>: Taught class 10 students and gained marketing experience.</li>
+        <li><strong>Trinity International Secondary School (1 month)</strong>: Volunteered to support educational initiatives.</li>
+      </ul>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section">
+      <h2>Projects</h2>
+      <ul>
+        <li>
+          <a href="https://kunjanbhattarai.github.io/Nepali-game/" target="_blank" rel="noopener noreferrer">
+            Online Chess Game
+          </a>: Developed an interactive chess game.
+        </li>
+        <li>
+          <a href="https://kunjanbhattarai.github.io/Internet-Speed-Tester/" target="_blank" rel="noopener noreferrer">
+            Internet Speed Checker
+          </a>: Built a tool to test internet speed.
+        </li>
+        <li>
+          <div class="counter-section">
+            <h3>Interactive Counter</h3>
+            <p>Count: <span id="count">0</span></p>
+            <button onclick="increment()">Increment</button>
+            <button onclick="decrement()">Decrement</button>
+          </div>
+        </li>
+      </ul>
+    </section>
+
+    <!-- Blog Section -->
+    <section id="blog" class="section">
+      <h2>Blog</h2>
+      <p>
+        Check out my articles and blogs at
+        <a href="http://www.kunjanbhattarai.blogspot.com" target="_blank" rel="noopener noreferrer">
+          kunjanbhattarai.blogspot.com
+        </a>.
+      </p>
+    </section>
+
+    <!-- Social Work Section -->
+    <section id="social-work" class="section">
+      <h2>Social Work</h2>
+      <p>
+        I actively participate in social initiatives and have worked with clubs like Leo and Lions to contribute to community development.
+      </p>
+    </section>
+
+    <!-- Interests Section -->
+    <section id="interests" class="section">
+      <h2>Interests</h2>
+      <p>
+        I love reading finance books, especially <em>The Intelligent Investor</em>, and exploring the Nepal Stock Exchange (NEPSE). I also engage in trading and enjoy learning about financial markets.
+      </p>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+      <h2>Contact</h2>
+      <p>
+        <strong>Phone</strong>: +977 9843600812<br>
+        <strong>Email</strong>: <a href="mailto:bhattaraikunjan93@gmail.com">bhattaraikunjan93@gmail.com</a>
+      </p>
+      <p>
+        <strong>Social Media</strong>:<br>
+        <a href="https://www.facebook.com/kunjanbhattarai.com.np" target="_blank" rel="noopener noreferrer">Facebook</a> |
+        <a href="https://x.com/kunjan_b2005" target="_blank" rel="noopener noreferrer">X</a> |
+        <a href="https://www.youtube.com/@KunjanBhattarai" target="_blank" rel="noopener noreferrer">YouTube</a>
+      </p>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <p>© 2025 Kunjan Bhattarai. All rights reserved.</p>
+    </footer>
+  </div>
+
+  <script>
+    let count = 0;
+    const countDisplay = document.getElementById('count');
+
+    function increment() {
+      count++;
+      countDisplay.textContent = count;
+    }
+
+    function decrement() {
+      count--;
+      countDisplay.textContent = count;
+    }
+  </script>
+</body>
+</html>
